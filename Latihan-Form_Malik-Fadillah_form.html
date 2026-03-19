@@ -1,19 +1,19 @@
 <html>
     <head>
-        <meta name="viewport" content="width=1200">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body, html {
-                margin: 0px;
-                height: 100px;
-            }
+           body, html {
+            margin: 0px;
+            height: 100%;
+        }
 
            .container {
     display: flex;
     height: 100vh;
     background-color: #f7f8fa;
-    min-width: 1366px;
-    overflow-x: auto; 
-
+    flex-wrap: wrap; 
+    overflow-x: hidden;
+}
             @font-face {
                 font-family: 'CocogooseBold';
                 src: url('font/Cocogoose-Pro-Bold-trial.ttf') format('truetype');
@@ -40,6 +40,20 @@
                 src: url('font/GlacialIndifference-Regular.otf') format('opentype');
                 font-weight: normal;
                 font-style: normal;
+            }
+
+            @media (max-width: 768px) {
+                .tabel-judul {
+                    width: 100% !important;
+                    padding: 60px 20px !important;
+                }
+                .right-side {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+                .container {
+                    flex-direction: column;
+                }
             }
 
             .himalik {
@@ -405,3 +419,4 @@
 </script>
     </body>
 </html>
+
