@@ -350,36 +350,35 @@
 
    
 <script>
-    // Ambil kanvas yang ada di dalam form
+    
     var canvas = document.getElementById("kartuCanvas");
     var ctx = canvas.getContext("2d");
 
-    // Ambil ukuran dari tag canvas
+ 
     var w = canvas.width;
     var h = canvas.height;
 
-    // Background hitam
     ctx.fillStyle = "#f7f8fa";
     ctx.strokeStyle = "#f24927"
     ctx.fillRect(0, 0, w, h); 
 
-    // Header Gradasi
+    
     let gradient = ctx.createLinearGradient(0, 0, w, 0);
     gradient.addColorStop(0, "#f24927"); 
     gradient.addColorStop(1, "#ff694b"); 
     ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, w, 40); // Tinggi header sedikit disesuaikan
+    ctx.fillRect(0, 0, w, 40); 
 
-    // Teks
+    
     ctx.fillStyle = "#f7f8fa";
     ctx.textAlign = "center"; 
-    ctx.font = "bold 16px Arial"; // Font sedikit dikecilkan agar muat di form
+    ctx.font = "bold 16px Arial";
     ctx.fillText("Tanda Tangan Digital", w / 2, 25); 
 
     ctx.font = "12px Arial";
     ctx.fillText("Astral Express Crew 2026", w / 2, 65);
 
-    // Logika Coret-coret
+  
     let drawing = false;
     canvas.onmousedown = () => drawing = true;
     canvas.onmouseup = () => { drawing = false; ctx.beginPath(); };
@@ -389,7 +388,7 @@
         ctx.lineCap = "round";
         ctx.strokeStyle = "#f24927";
         
-        // Perbaikan posisi mouse agar lebih presisi di dalam layout flexbox
+        
         var rect = canvas.getBoundingClientRect();
         var mouseX = e.clientX - rect.left;
         var mouseY = e.clientY - rect.top;
