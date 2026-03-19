@@ -153,23 +153,19 @@
     </head>
 
     <body>
-
         
         <div class="container">
-            
             
             <table class="tabel-judul">
                 <tr> 
                     <td> <img src="gambar/HIMALIK.png" style="width: 54px; height: 28px; position: absolute; top: 30px; left: 30px;"> </td>
-
                      <td> <img src="gambar/qr.png" style="width: 215px; height: 125px; position: absolute; top: 630px; left: 710px;"> </td>
-
                     <td style="width: 64px; height: 40px; position: absolute; top: 36px; left: 100px; font-family: GlacialIndifferenceBold; color: #f7f8fa;">HIMALIK </td>
                     <td style="width: 900px; height: 40px; position: absolute; top: 37.6px; left: 180px; font-size: 10px; font-family: Poppinsregular; color: #f7f8fa;">Himpunan Mahasiswa Teknik Listrik </td>
                 </tr>
                 
                 <tr>
-                    <td class="judul-coco" style="font-size: 58px; color: #f7f8fa; padding-left: 90; padding-top: 300px;">
+                    <td class="judul-coco" style="font-size: 58px; color: #f7f8fa; padding-left: 90px; padding-top: 300px;">
                         <div style="line-height: 1.3;">HALO, KAMI HIMALIK!</div>
                     </td>
                 </tr>
@@ -222,8 +218,6 @@
                             Pengabdian Masyarakat
                         </div>
 
-
-
                         <p class="poppins" style="color: #f24927; padding-top: 16px; text-align: center; padding-left: 6%; font-size: 19px;"> Seken</p>
                         <svg width="400" height="400"> 
                             <rect x="290" y="100" width="30" height="30" stroke="#f7f8fa" stroke-width="2" fill="#f24927" />
@@ -241,7 +235,6 @@
                 </tr>
             </table>
 
-
           <div class="right-side">
             
     <table class="tabel-judul2">
@@ -251,86 +244,97 @@
         <tr> 
             <td style="vertical-align: top; padding-left: 55px">
                  <div style="display: flex; gap: 20px; width: 92%; margin-bottom: 20px; margin-top: 40px;"></div>
-                <form action="iajsiajsao.php" method="POST">
                 
-                        <div style="flex: 1;">
-                            <label for="fname" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 40px; letter-spacing: 1.3px; color: #f24927;">Nama Lengkap</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="cont: John Mew" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;" required>
-                        </div>
-
-                        <div style="flex: 1;">
-                            <label for="lname" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 40px; letter-spacing: 1.3px; color:#f24927">NIM</label><br>
-                            <input type="text" id="lname" name="lname" placeholder="cont: 2507411043" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;" required>
-                        </div>
-                    </div>
+                <form action="iajsiajsao.php" method="POST">
+                    <div style="display: flex; gap: 30px; width: 92%; margin-top: 10px;">
                         
-                    <p style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; margin-bottom: 1px; color: #f24927;"> Jenis Kelamin</p>
-                    <input type="radio" id="Pria" name="kelamin" value="Pria" required>
-                    <label for="Pria" style="font-family: Poppinsregular; font-size: 14px;font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 30px;">Pria </label>
-                    <input type="radio" id="Wanita" name="kelamin" value="Wanita" required>
-                    <label for="Wanita" style="font-family: Poppinsregular; font-size: 14px;font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a;">Wanita </label><br>
-
-                    <div style="display: flex; gap: 20px; width: 92%; margin-top: 1px;"> 
-                        <div style="flex: 1;">
-                                <label for="Jurusan" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #f24927;"> Jurusan: </label> <br>
-                            <select id="Jurusan" name="Jurusan" style="margin-top: 2px; width: 100%; padding: 15px 9px; border-radius: 8px; background-color: #f7f8fa; outline: none; border: 2px solid #d8dadd; box-sizing: border-box; color: #615f5f;" required>
-                            <option value="TTL">Teknik Tenaga Listrik</option>
-                            <option value="TE">Teknik Elektronika</option>
-                            <option value="TT">Teknik Telekomunikasi</option>
-                            <option value="TK">Teknik Kendali</option>
-                            <option value="TRIL">Teknologi Rekayasa Instalasi Listrik</option>
-                            </select>
-                        </div>
-
-                        <div style="flex: 1;">
-                            <label for="Kelas" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #f24927;"> Semester: </label> <br>
-                            <select id="Kelas" name="Kelas" style="margin-top: 2px; width: 100%; padding: 15px 9px; border-radius: 8px; background-color: #f7f8fa; outline: none; border: 2px solid #d8dadd; box-sizing: border-box; color: #615f5f; margin-bottom: 15px;">
-                                <option value="2">Semester 2</option>
-                                <option value="3">Semester 3</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; gap: 30px; width: 92%; margin-top: 24px; margin-bottom: 30px;">
-                        <div style="flex: 1;">
-                            <p style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 3px; letter-spacing: 1.3px; color: #f24927; margin-top: 0;"> Divisi Peminatan: </p>
-
-                            <input type="checkbox" id="Wilayah1" name="Wilayah1" value="Sekbend">
-                            <label for="Wilayah1" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 3px; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 30px;"> Sekbend</label>
-
-                            <input type="checkbox" id="Wilayah2" name="Wilayah2" value="MedBrand">
-                            <label for="Wilayah2" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 3px;"> MedBrand</label>
-
-                            <input type="checkbox" id="Wilayah3" name="Wilayah3" value="Humas">
-                            <label for="Wilayah3" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a;margin-right: 30px;"> Humas</label> <br>
-
-                            <input type="checkbox" id="Wilayah4" name="Wilayah4" value="Kominfo">
-                            <label for="Wilayah4" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 33px;"> Kominfo</label>
-
-                            <input type="checkbox" id="Wilayah5" name="Wilayah5" value="Danus">
-                            <label for="Wilayah5" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a;margin-right: 33px;"> Danus</label>
-
-                            <input type="checkbox" id="Wilayah6" name="Wilayah6" value="Sosmas">
-                            <label for="Wilayah6" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #8a8a8a;margin-right: 30px;"> Sosmas</label>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
                             
-                            <div style="margin-top: 10px;">
-                                <label for="Email" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 40px; letter-spacing: 1.3px; color: #f24927;">Alamat Email</label><br>
-                                <input type="text" id="Email" name="Email" placeholder="cont: Johnmew@gmail.com" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;">
-
-                                <label for="Notel" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 40px; letter-spacing: 1.3px; color: #f24927;">Nomor Telepon</label><br>
-                                <input type="text" id="Notel" name="Notel" placeholder="cont: 081234567890" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;" required>
+                            <div>
+                                <label for="fname" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;">Nama Lengkap</label><br>
+                                <input type="text" id="fname" name="fname" placeholder="cont: John Mew" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px; margin-top: 5px;" required>
                             </div>
+
+                            <div>
+                                <label for="lname" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color:#f24927">NIM</label><br>
+                                <input type="text" id="lname" name="lname" placeholder="cont: 2507411043" style="width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px; margin-top: 5px;" required>
+                            </div>
+
+                            <div>
+                                <p style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; margin-bottom: 5px; margin-top: 0; color: #f24927;"> Jenis Kelamin</p>
+                                <input type="radio" id="Pria" name="kelamin" value="Pria" required>
+                                <label for="Pria" style="font-family: Poppinsregular; font-size: 14px;font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 30px;">Pria </label>
+                                <input type="radio" id="Wanita" name="kelamin" value="Wanita" required>
+                                <label for="Wanita" style="font-family: Poppinsregular; font-size: 14px;font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a;">Wanita </label>
+                            </div>
+
+                            <div>
+                                <label for="Jurusan" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;"> Jurusan: </label> <br>
+                                <select id="Jurusan" name="Jurusan" style="margin-top: 5px; width: 100%; padding: 15px 9px; border-radius: 8px; background-color: #f7f8fa; outline: none; border: 2px solid #d8dadd; box-sizing: border-box; color: #615f5f;" required>
+                                    <option value="TTL">Teknik Tenaga Listrik</option>
+                                    <option value="TE">Teknik Elektronika</option>
+                                    <option value="TT">Teknik Telekomunikasi</option>
+                                    <option value="TK">Teknik Kendali</option>
+                                    <option value="TRIL">Teknologi Rekayasa Instalasi Listrik</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <p style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927; margin-top: 0; margin-bottom: 5px;"> Divisi Peminatan: </p>
+                                <input type="checkbox" id="Wilayah1" name="Wilayah1" value="Sekbend">
+                                <label for="Wilayah1" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 25px;"> Sekbend</label>
+                                <input type="checkbox" id="Wilayah2" name="Wilayah2" value="MedBrand">
+                                <label for="Wilayah2" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 20px;"> MedBrand</label>
+                                <input type="checkbox" id="Wilayah3" name="Wilayah3" value="Humas">
+                                <label for="Wilayah3" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a;"> Humas</label> <br>
+                                <div style="margin-top: 5px;">
+                                    <input type="checkbox" id="Wilayah4" name="Wilayah4" value="Kominfo">
+                                    <label for="Wilayah4" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 28px;"> Kominfo</label>
+                                    <input type="checkbox" id="Wilayah5" name="Wilayah5" value="Danus">
+                                    <label for="Wilayah5" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a; margin-right: 48px;"> Danus</label>
+                                    <input type="checkbox" id="Wilayah6" name="Wilayah6" value="Sosmas">
+                                    <label for="Wilayah6" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #8a8a8a;"> Sosmas</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="Email" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;">Alamat Email</label><br>
+                                <input type="text" id="Email" name="Email" placeholder="cont: Johnmew@gmail.com" style="margin-top: 5px; width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="Notel" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;">Nomor Telepon</label><br>
+                                <input type="text" id="Notel" name="Notel" placeholder="cont: 081234567890" style="margin-top: 5px; width: 100%; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px;" required>
+                            </div>
+
                         </div>
 
-                        <div style="flex: 1; display: flex; flex-direction: column;">
-                            <label for="Alasan" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; line-height: 30px; letter-spacing: 1.3px; color: #f24927; margin-bottom: 2px; margin-top: -10px;">Alasan Bergabung:</label>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
                             
-                            <textarea id="Alasan" name="Alasan" placeholder="Tuliskan alasanmu di sini..." style="width: 100%; flex: 1; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px; resize: none;"required></textarea>
+                            <div>
+                                <label for="Kelas" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;"> Semester: </label> <br>
+                                <select id="Kelas" name="Kelas" style="margin-top: 5px; width: 100%; padding: 15px 9px; border-radius: 8px; background-color: #f7f8fa; outline: none; border: 2px solid #d8dadd; box-sizing: border-box; color: #615f5f;">
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                </select>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="Alasan" style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;">Alasan Bergabung:</label>
+                                <textarea id="Alasan" name="Alasan" placeholder="Tuliskan alasanmu di sini..." style="margin-top: 5px; width: 100%; height: 205px; border: 2px solid #d8dadd; outline: none; padding: 15px 9px; box-sizing: border-box; font-family: sans-serif; font-weight: 200; border-radius: 8px; background-color: #f7f8fa; font-size: 14px; resize: none;" required></textarea>                              
+                            </div>
+
+                            <div style="margin-top: 1px;">
+    <label style="font-family: Poppinsregular; font-size: 14px; font-weight: 900; letter-spacing: 1.3px; color: #f24927;">Tanda Tangan (Signature):</label><br>
+    <canvas id="kartuCanvas" width="390" height="270" style="border: 2px solid #d8dadd; border-radius: 8px; margin-top: 5px; cursor: crosshair;"></canvas required>
+</div>
+
                         </div>
 
                     </div>
                     
-                    <div style="width: 92%; display: flex; justify-content: flex-end; margin-top: 10px; margin-bottom: 40px;">
+                    
+                    <div style="width: 92%; display: flex; justify-content: flex-end; margin-top: 20px; margin-bottom: 40px;">
                         <button type="submit" class="btn btn-submit">KIRIM FORMULIR</button>
                     </div>
 
@@ -343,5 +347,58 @@
             </div>
 
         </div>
+
+   
+<script>
+    // Ambil kanvas yang ada di dalam form
+    var canvas = document.getElementById("kartuCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Ambil ukuran dari tag canvas
+    var w = canvas.width;
+    var h = canvas.height;
+
+    // Background hitam
+    ctx.fillStyle = "#f7f8fa";
+    ctx.strokeStyle = "#f24927"
+    ctx.fillRect(0, 0, w, h); 
+
+    // Header Gradasi
+    let gradient = ctx.createLinearGradient(0, 0, w, 0);
+    gradient.addColorStop(0, "#f24927"); 
+    gradient.addColorStop(1, "#ff694b"); 
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, w, 40); // Tinggi header sedikit disesuaikan
+
+    // Teks
+    ctx.fillStyle = "#f7f8fa";
+    ctx.textAlign = "center"; 
+    ctx.font = "bold 16px Arial"; // Font sedikit dikecilkan agar muat di form
+    ctx.fillText("Tanda Tangan Digital", w / 2, 25); 
+
+    ctx.font = "12px Arial";
+    ctx.fillText("Astral Express Crew 2026", w / 2, 65);
+
+    // Logika Coret-coret
+    let drawing = false;
+    canvas.onmousedown = () => drawing = true;
+    canvas.onmouseup = () => { drawing = false; ctx.beginPath(); };
+    canvas.onmousemove = (e) => {
+        if(!drawing) return;
+        ctx.lineWidth = 3;
+        ctx.lineCap = "round";
+        ctx.strokeStyle = "#f24927";
+        
+        // Perbaikan posisi mouse agar lebih presisi di dalam layout flexbox
+        var rect = canvas.getBoundingClientRect();
+        var mouseX = e.clientX - rect.left;
+        var mouseY = e.clientY - rect.top;
+
+        ctx.lineTo(mouseX, mouseY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(mouseX, mouseY);
+    };
+</script>
     </body>
 </html>
