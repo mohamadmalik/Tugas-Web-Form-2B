@@ -7,13 +7,12 @@
                 height: 100px;
             }
 
-            .container {
+           .container {
     display: flex;
     height: 100vh;
     background-color: #f7f8fa;
-    min-width: 1200px; 
+    min-width: 1366px;
     overflow-x: auto; 
-}
 
             @font-face {
                 font-family: 'CocogooseBold';
@@ -68,11 +67,11 @@
             }
 
           
-            .tabel-judul {
+           .tabel-judul {
                 border-collapse: collapse;
-               
-                width: 109%;
-
+                width: 45%; 
+                min-width: 500px; 
+                flex-shrink: 0; 
                 background-color: #f24927;
                 border-radius: 30px;
                 margin: 20px;
@@ -108,7 +107,9 @@
             }
 
             .right-side {
-                width: 100%;
+                width: 55%;
+                min-width: 700px; /* Lebar minimal area form */
+                flex-shrink: 0; /* KUNCI UTAMA: Larang elemen ini mengecil */
                 background-color: #f7f8fa;
                 color: #f24927;
                 padding-right: 20px;
